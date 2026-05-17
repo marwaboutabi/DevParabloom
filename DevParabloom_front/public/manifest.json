@@ -1,0 +1,9 @@
+{
+  "short_name": "ParaBloom",
+  "name": "ParaBloom - Parapharmacie en ligne",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#d4879a",
+  "background_color": "#ffffff"
+}
