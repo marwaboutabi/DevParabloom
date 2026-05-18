@@ -6,8 +6,9 @@
 
 ## Réalisé par
 
-Chlyah Sara   | [echlihsara-gif](https://github.com/echlihsara-gif)
-Boutabi Marwa | [@marwaboutabi](https://github.com/marwaboutabi) 
+Chlyah Sara   | [echlihsara-gif](https://github.com/echlihsara-gif).
+
+Boutabi Marwa | [@marwaboutabi](https://github.com/marwaboutabi). 
 
 **Encadré par :** Pr. ERRATTAHI Rahhal 
 
@@ -72,19 +73,21 @@ L'application propose :
 
 ## Structure de la base de données
 
-La base `parabloom_db` contient 10 tables :
 
- `users` : Comptes utilisateurs (admin / client) 
- `products` : Catalogue des 78 produits 
- `categories` : 4 catégories principales 
- `orders` : Commandes clients 
- `order_items` : Lignes de commande (table pivot) 
- `carts` : Paniers utilisateurs
- `cart_items` : Articles du panier 
- `personal_access_tokens` : Tokens Sanctum 
- `password_resets` : Réinitialisation de mot de passe 
- `migrations` : Versioning de la BDD 
+La base `parabloom_backend` contient 10 tables :
 
+| Table | Description |
+|-------|-------------|
+| `users` | Comptes utilisateurs (admin / client) |
+| `products` | Catalogue des 78 produits |
+| `categories` | 4 catégories principales |
+| `orders` | Commandes clients |
+| `order_items` | Lignes de commande (table pivot) |
+| `carts` | Paniers utilisateurs |
+| `cart_items` | Articles du panier |
+| `personal_access_tokens` | Tokens Sanctum |
+| `password_resets` | Réinitialisation de mot de passe |
+| `migrations` | Versioning de la BDD |
 ---
 
 ## Installation et lancement
