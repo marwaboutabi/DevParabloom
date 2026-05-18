@@ -179,25 +179,42 @@ Rôle 2 : user1 | Email : user1@gmail.com| Mot de passe :123456 .
      
 Le projet DevParabloom est organisé en trois éléments à la racine : le dossier DevParabloom_back/ pour le back-end Laravel, le dossier DevParabloom_front/ pour le front-end React, et le fichier parabloom_db.sql contenant la structure et les données de la base de données.
 
-Notre back-end respecte strictement l'architecture Modèle-Vue-Contrôleur,
-Le dossier DevParabloom_back/ contient l'ensemble de l'API Laravel, structuré selon l'architecture standard de Laravel:
-Le dossier app/ regroupe la logique métier avec ses sous-dossiers
-     — Console/, Exceptions/, Http/ et Models/, ainsi que Providers/.
-On y trouve également — bootstrap/, config/, database/, public/, resources/, routes/, storage/, tests/ et vendor/.
-
-Le dossier DevParabloom_front/ contient l'application React.
- Le dossier cypress/ est dédié aux tests end-to-end avec ses deux sous-dossiers
-               — fixtures/
-               — support/.
-Tout le code source se trouve dans src/, organisé en plusieurs sous-dossiers :
-      — admin/ pour les composants administrateur
-      — components/ pour les éléments réutilisables
-      — context/ pour la gestion d'état globale
-      — data/ pour les données statiques
-      — hooks/ pour les hooks personnalisés
-      — pages/ pour les vues principales
-      — services/ contenant la configuration Axios.
-À la racine de src/ se trouvent les fichiers — App.js, App.css et index.css.
+      
+      DevParabloom/
+├── DevParabloom_back/             
+│   ├── app/
+│   │   ├── Console/
+│   │   ├── Exceptions/
+│   │   ├── Http/                   # Midlleware, Controllers
+│   │   ├── Models/                 # User, Product, Order, Category, Cart...
+│   │   └── Providers/
+│   ├── bootstrap/
+│   ├── config/
+│   ├── database/                   # Migrations & Seeders
+│   ├── public/
+│   ├── resources/
+│   ├── routes/                     # api.php, web.php
+│   ├── storage/
+│   ├── tests/
+│   └── vendor/
+│
+├── DevParabloom_front/             
+│   ├── cypress/                    
+│   │   ├── fixtures/
+│   │   └── support/
+│   └── src/
+│       ├── admin/                  # Dashboard, Products, Orders, Customers
+│       ├── components/             # ProductGrid, PromoSections, CartSideBar, Footer..
+│       ├── context/                # AuthContext, CartContext, OrderContext
+│       ├── data/
+│       ├── hooks/
+│       ├── pages/                  # HomePage, ProductPage, CartPage...
+│       ├── services/               # api.js — Configuration Axios
+│       ├── App.js
+│       ├── App.css
+│       └── index.css
+│
+└── parabloom_db.sql                # Structure + données de la BDD
 ---
 
 ## Sécurité
