@@ -180,7 +180,8 @@ Rôle 2 : user1 | Email : user1@gmail.com| Mot de passe :123456 .
 Le projet DevParabloom est organisé en trois éléments à la racine : le dossier DevParabloom_back/ pour le back-end Laravel, le dossier DevParabloom_front/ pour le front-end React, et le fichier parabloom_db.sql contenant la structure et les données de la base de données.
 
       
-      DevParabloom/
+      DevParabloom/ 
+ ````
 ├── DevParabloom_back/             
 │   ├── app/
 │   │   ├── Console/
@@ -215,6 +216,7 @@ Le projet DevParabloom est organisé en trois éléments à la racine : le dossi
 │       └── index.css
 │
 └── parabloom_db.sql                # Structure + données de la BDD
+````
 ---
 
 ## Sécurité
