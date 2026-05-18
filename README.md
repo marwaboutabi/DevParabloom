@@ -169,14 +169,14 @@ L'application sera accessible sur : `http://localhost:3000`
 
 ## Comptes de test (des exemples)
 
-Rôle 1 : admin | Email : admin@gmail.com| Mot de passe :123456 
-Rôle 2 : user1 | Email : user1@gmail.com| Mot de passe :123456
+Rôle 1 : admin | Email : admin@gmail.com| Mot de passe :123456 .
+
+Rôle 2 : user1 | Email : user1@gmail.com| Mot de passe :123456 .
 
 ---
 
 ## Structure du projet
-```
-      
+     
 Le projet DevParabloom est organisé en trois éléments à la racine : le dossier DevParabloom_back/ pour le back-end Laravel, le dossier DevParabloom_front/ pour le front-end React, et le fichier parabloom_db.sql contenant la structure et les données de la base de données.
 
 Notre back-end respecte strictement l'architecture Modèle-Vue-Contrôleur,
