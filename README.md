@@ -1,6 +1,6 @@
 # ParaBloom — Plateforme E-commerce de Parapharmacie
 
- Application web complète de gestion et de commercialisation de produits de parapharmacie, développée dans le cadre du module Développement Web — ENSA El Jadida (2ITE-1, 2025/2026).
+ Application web complète de gestion et de commercialisation de produits de parapharmacie, développée dans le cadre du module Développement Web — ENSA El Jadida (filière Ingénierie Informatique et Technologies Emergentes (2ITE-1), 2025/2026).
 
 ---
 
