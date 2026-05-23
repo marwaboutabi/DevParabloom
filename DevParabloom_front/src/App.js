@@ -21,7 +21,6 @@ import CookieBanner from './components/common/CookieBanner';
 
 
 // Composant de protection
-// Composant de protection corrigé
 const ProtectedAdminRoute = ({ children }) => {
   const { user } = useAuth();
   
