@@ -227,6 +227,28 @@ Le projet DevParabloom est organisé en trois éléments à la racine : le dossi
 - Validation stricte de toutes les données entrantes
 - Paiement conforme aux normes **PCI-DSS** via Stripe Elements
 
+### Validation côté client
+
+#### Formulaire de livraison — `validateClientInfo()`
+
+Remplacement du simple `if (!clientInfo.name || ...)` par une fonction de validation stricte par champ :
+
+| Champ     | Règle |
+|-----------|-------|
+| Nom       | Lettres uniquement (y compris accents), 2 à 100 caractères |
+| Email     | Format standard `x@x.x` |
+| Téléphone | Format marocain : `06/07/05XXXXXXXX` ou `+212XXXXXXXXX` |
+| Adresse   | 5 à 200 caractères |
+| Ville     | 2 à 50 caractères |
+
+#### Formulaire de paiement — `validateCardInfo()`
+
+| Champ               | Règle |
+|---------------------|-------|
+| Numéro de carte     | Exactement 16 chiffres |
+| Date d'expiration   | Format `MM/AA` + carte non expirée (validation réelle de la date) |
+| CVC                 | 3 chiffres (Visa/Mastercard) ou 4 chiffres (Amex) | 
+
 
 ---
 
