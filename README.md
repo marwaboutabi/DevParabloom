@@ -171,7 +171,7 @@ L'application sera accessible sur : `http://localhost:3000`
 
 Rôle 1 : admin | Email : admin@gmail.com| Mot de passe :123456 .
 
-Rôle 2 : user1 | Email : user1@gmail.com| Mot de passe :123456 .
+Rôle 2 : userTest | Email : userTest@gmail.com| Mot de passe :123456 .
 
 ---
 
@@ -226,6 +226,7 @@ Le projet DevParabloom est organisé en trois éléments à la racine : le dossi
 - Protection contre les injections SQL via **Eloquent ORM**
 - Validation stricte de toutes les données entrantes
 - Paiement conforme aux normes **PCI-DSS** via Stripe Elements
+
 
 ---
 
