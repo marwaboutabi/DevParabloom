@@ -8,7 +8,7 @@ class Product extends Model
 {
     protected $fillable = [
         'name', 'slug', 'price', 'promo_price',
-        'description', 'image_url', 'category_id', 'stock', 'sub_category'
+        'description', 'image_url', 'category_id','sub_category', 'stock'
     ];
 
     protected $appends = ['in_stock'];

@@ -67,6 +67,7 @@ return response()->json(['success' => true, 'data' => $product]);     }
             'image_url'   => $request->image_url,
             'promo_price' => $request->promo_price,
             'stock'       => $request->stock ?? 10,
+            'sub_category' => $request->sub_category,
         ]);
 
         return response()->json(['success' => true, 'data' => $product], 201);
@@ -84,6 +85,7 @@ return response()->json(['success' => true, 'data' => $product]);     }
             'image_url'   => $request->image_url   ?? $product->image_url,
             'promo_price' => $request->promo_price  ?? $product->promo_price,
             'stock'       => $request->stock       ?? $product->stock,
+            'sub_category' => $request->sub_category ?? $product->sub_category,
         ]);
 
         return response()->json(['success' => true, 'data' => $product]);

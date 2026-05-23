@@ -12,7 +12,7 @@ class AddSubCategoryToProductsTable extends Migration
         });
     }
 
-    public function down()
+    public function down(): void
     {
         Schema::table('products', function (Blueprint $table) {
             $table->dropColumn('sub_category');
